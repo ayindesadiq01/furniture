@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@100;300;400;600&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Exo 2', sans-serif;
+}
+
+ul li {
+  list-style: none;
+}
+
+/* TOP BAR */
+.logo-text {
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+.top-bar {
+  padding: 1em;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+
+.menu {
+  display: relative;
+}
+
+.menu-bar {
+  position: absolute;
+  top: 50px;
+  left: 0px;
+  background-color: grey;
+  width: 50%;
+}
+
+.mob {
+  display: flex;
+  align-items: center;
+}
+
+.mob img {
+  margin: 0 .5em;
+}
+
+.search {
+  width: 15px;
+}
+
+.search-box {
+  width: 100%;
+}
+
+.location-info {
+  display: none;
+}
+.lo-address {
+  display: flex;
+  align-items: center;
+  justify-items: center;
+}
+.lo-address span img {
+  width: .9em;
+  margin-right: .5em;
+}
+
+/* home */
+.home {
+  background: linear-gradient(rgba(0, 0, 0, .7), rgb(0, 0, 0, .7)),url('./furnitt.avif');
+  background-position: center;
+  background-repeat: none;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  padding: 3em 1em;
+  color: white;
+}
+
+.page-style {
+  color: orangered
+}
+
+.page-text {
+  font-weight: 500;
+  font-size: 2.2rem;
+}
+
+.page-wording {
+  margin: 1.2em 0 2em 0;
+  font-weight: 300;
+  line-height: 1.3em;
+}
+
+.collection-link {
+  text-decoration: none;
+  color: white;
+  background: orangered;
+  padding: .7em 1.2em;
+  position: relative;
+  z-index: 1;
+}
+
+.collection-link::before {
+  content: '';
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  width: 10%;
+  height: 15px;
+  background-color: grey;
+  z-index: -1;
+  transition: width 1s;
+}
+
+.collection-link::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  right: -2px;
+  width: 10%;
+  height: 15px;
+  background-color: grey;
+  z-index: -1;
+  transition: width 1s;
+}
+
+.collection-link:hover::before, .collection-link:hover::after {
+  width: 50%;
+}
+
+
+.fur-info {
+  display: flex;
+  /* justify-content: space-evenly; */
+  text-align: center;
+  margin: 2em 0;
+  text-align: center;
+}
+
+.fur-info h1 {
+  font-weight: 300;
+  margin-bottom: .5em;
+}
+
+.cust {
+  border-left: 1px solid white;
+  padding-left: 1em;
+  margin-left: 1em
+}
+.hidden {
+  display: none;
+}
+
+/* Mission */
+.mission {
+  padding: 1em;
+}
+
+.mission-lists {
+  margin: 1.5em 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.mission-list {
+  margin-bottom: 1em;
+}
+
+.mission-icon {
+  background-color: orangered;
+  padding: .3em;
+  border-radius: 40%;
+  width: 3 0px;
+}
+
+.mission h1 {
+  font-size: 1.4rem;
+}
+
+.mission-list h4 {
+  margin: .5em 0;
+}
+
+.mission-list p {
+  line-height: 1.5em;
+}
