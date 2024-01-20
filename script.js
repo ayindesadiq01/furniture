@@ -31,7 +31,17 @@ const conObFtn = function(entries) {
 
 const contOb = new IntersectionObserver(conObFtn, {
   root: null,
-  threshold: 0
+  threshold: 0.6
 })
 
 contOb.observe(home);
+
+// WITH MENU BAR
+const hidden = document.querySelector('.hidden');
+const menuBar = document.querySelector('.menu-bar');
+const menuIcon = document.querySelector('.menu-icon');
+
+menuIcon.addEventListener('click', () => {
+  // menuBar.classList.remove('hidden');
+
+})

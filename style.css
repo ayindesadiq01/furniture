@@ -24,6 +24,7 @@ ul li {
   display: flex;
   justify-content: space-between;
   position: relative;
+  align-items: center;
 }
 
 .menu {
@@ -32,8 +33,8 @@ ul li {
 
 .menu-bar {
   position: absolute;
-  top: 50px;
-  left: 0px;
+  top: 72px;
+  right: 0px;
   background-color: grey;
   width: 50%;
 }
@@ -47,14 +48,18 @@ ul li {
   margin: 0 .5em;
 }
 
+.list-item {
+  display: flex;
+  flex-direction: column;
+}
+
 .search {
-  width: 15px;
+  width: 17px;
 }
 
 .search-box {
   width: 100%;
 }
-
 
 .lo-address {
   display: flex;
@@ -66,7 +71,7 @@ ul li {
   margin-right: .5em;
 }
 
-/* Working with Progress */
+/* Working with Progress*/
 .progress {
   width: 100%;
   appearance: none;
@@ -90,7 +95,7 @@ ul li {
   position: fixed;
   top: 0px;
   background-color: rgba(255, 255, 255, 1);
-  z-index: 1;
+  z-index: 2;
   width: 100%;
   transition: 1s;
 }
