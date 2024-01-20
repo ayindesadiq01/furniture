@@ -241,14 +241,95 @@ ul li {
 
 /* SIGN UP */
 .sign-up {
-  padding: 2em 1em;
+  padding: 2.5em 1em;
   background: linear-gradient(rgba(0,0,0,.7), rgba(0,0,0, .7)), url('./sub.jpg');
 }
 
 .signup-text {
   background-color: white;
   padding: 2em 1em;
+  text-align: center;
 }
 
- 
+.signup-heading {
+  font-size: 1.8rem;
+  color: #2A254B;
+}
 
+.signup-wording {
+  font-size: .9rem;
+  line-height: 1.4em;
+  margin: .5em 0;
+  color: grey;
+}
+
+.mail {
+  display: flex;
+  flex-direction: column;
+}
+
+#mail {
+  font-size: 1rem;
+  padding: .7em 0;
+  margin: 1em 0;
+}
+
+#mail:placeholder-shown {
+  padding-left: 15px;
+  color: rgb(221, 221, 221);
+  border: 1px solid rgb(221, 221, 221);
+}
+
+.submit-btn {
+  padding: .7em 0;
+  background-color: orangered;
+  border: none;
+  color: white;
+  font-size: 1rem;
+  margin-bottom: 1.5em;
+}
+
+.loc-info {
+  color: rgb(197, 56, 5);
+  font-weight: 600;
+}
+
+.lo-address {
+  margin-bottom: 1em;
+}
+
+/* ARTISTRY */
+.artistry {
+  padding: 2em 1em;
+}
+
+.artistry-box {
+  display: flex;
+  flex-direction: column;
+
+}
+
+.left-box {
+  background-color:#2A254B;
+  color: white;
+  padding: 2em 1em;
+}
+
+.left-box h2 {
+  font-size: 1.4rem;
+  font-weight: 400;
+}
+
+.left-box p {
+  margin: 2em 0 6em 0;
+}
+
+.right-box {
+  background-image: url('./artistry.png');
+}
+
+.mail-collection {
+  text-decoration: none;
+  color: white;
+  background-color: orangered;
+}
