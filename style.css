@@ -66,6 +66,35 @@ ul li {
   margin-right: .5em;
 }
 
+/* Working with Progress */
+.progress {
+  width: 100%;
+  appearance: none;
+  height: 10px;
+  background-color: rgb(236, 236, 236);
+}
+
+.progress::-webkit-progress-bar {
+  background-color: rgb(236, 236, 236);
+}
+
+.progress::-webkit-progress-value {
+  background-color: orangered;
+}
+
+.progress::-moz-progress-bar {
+  background-color: orangered;
+}
+
+.sticky-container {
+  position: fixed;
+  top: 0px;
+  background-color: rgba(255, 255, 255, 1);
+  z-index: 1;
+  width: 100%;
+  transition: 1s;
+}
+
 /* home */
 .home {
   background: linear-gradient(rgba(0, 0, 0, .7), rgb(0, 0, 0, .7)),url('./furnitt.avif');
@@ -306,13 +335,14 @@ ul li {
 .artistry-box {
   display: flex;
   flex-direction: column;
-
+  height: 100%;
 }
 
 .left-box {
   background-color:#2A254B;
   color: white;
   padding: 2em 1em;
+  height: 50%;
 }
 
 .left-box h2 {
@@ -326,10 +356,31 @@ ul li {
 
 .right-box {
   background-image: url('./artistry.png');
+  background-position: cover;
+  background-repeat: none;
+  background-size: cover;
+  width: 100%;
+  height: 500px;
 }
 
 .mail-collection {
-  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  text-align: center;
+  
+}
+
+.view {
   color: white;
   background-color: orangered;
+  text-decoration: none;
+  padding: .7em 1em;
+  border: none;
+  margin: .5em 0;
+}
+
+.call {
+  color: orangered;
+  background-color: white;
 }
