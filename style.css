@@ -239,5 +239,16 @@ ul li {
   text-align: center;
 }
 
+/* SIGN UP */
+.sign-up {
+  padding: 2em 1em;
+  background: linear-gradient(rgba(0,0,0,.7), rgba(0,0,0, .7)), url('./sub.jpg');
+}
 
+.signup-text {
+  background-color: white;
+  padding: 2em 1em;
+}
+
+ 
 
