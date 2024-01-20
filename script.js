@@ -21,7 +21,6 @@ const home = document.querySelector('.home');
 
 const conObFtn = function(entries) {
   const [entry] = entries;
-    // console.log(entry)
 
   if(!entry.isIntersecting) {
     homePage.classList.add('sticky-container')
