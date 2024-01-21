@@ -45,3 +45,26 @@ menuIcon.addEventListener('click', () => {
   // menuBar.classList.remove('hidden');
 
 })
+
+// REVEALING ON SCROLL
+const allSection = document.querySelectorAll('.section');
+
+const revSection = function(entries, observer) {
+
+  const [entry] = entries;
+  console.log(entry)
+
+  if(entry.isIntersecting) {
+    entry.target.classList.remove('section-hidden');
+  }
+}
+
+const intSection = new IntersectionObserver(revSection, {
+  root: null,
+  threshold: 0.1,
+});
+
+allSection.forEach(section => {
+  intSection.observe(section);
+  section.classList.add('section-hidden')
+})
