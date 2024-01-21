@@ -389,3 +389,86 @@ ul li {
   color: orangered;
   background-color: white;
 }
+
+/* Recommendation */
+.recommendation {
+  padding: 1em;
+  background-color: #2A254B;
+  color: white;
+}
+
+.recom-box {
+  background-color: white;
+  color: #2A254B;
+}
+
+.recom-heading {
+  font-size: 1.5rem;
+  margin-bottom: 1.5em;
+}
+
+.recom-lists {
+  position: relative;
+  padding: .5em;
+}
+
+.recom-list {
+  margin-bottom: 2em;
+  position: relative;
+}
+
+.recom-name {
+  font-size: 1.1rem;
+  margin: .2em 0;
+}
+
+.amount {
+  font-weight: bold;
+}
+
+.recom-image {
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.icon-link {
+  position: absolute;
+  right: 10px;
+  bottom: 5px;
+  border: 1px solid grey;
+  border-radius: 50%;
+  width: 20px;
+}
+
+/* footer */
+
+.footer {
+  padding: 2em 1em;
+  background-color: #2A254B;
+  color: white;
+}
+
+.j-mail {
+  display: flex;
+  flex-direction: column;
+}
+
+.j-mail input {
+  margin: 1em 0;
+  padding: .7em 0;
+  opacity: .5;
+}
+
+.j-mail input:placeholder-shown {
+  padding-left: 1em;
+}
+
+.j-mail button {
+  padding: .7em 0;
+  color: grey;
+}
+
+
+
+
