@@ -40,10 +40,17 @@ contOb.observe(home);
 const hidden = document.querySelector('.hidden');
 const menuBar = document.querySelector('.menu-bar');
 const menuIcon = document.querySelector('.menu-icon');
+const closeIcon = document.querySelector('.close-icon');
+const blurr = document.querySelector('.blurry')
 
 menuIcon.addEventListener('click', () => {
-  // menuBar.classList.remove('hidden');
+  menuBar.classList.remove('hidden');
+  blurr.classList.remove('hidden');
+})
 
+closeIcon.addEventListener('click', () => {
+  menuBar.classList.add('hidden');
+  blurr.classList.add('hidden');
 })
 
 // REVEALING ON SCROLL
@@ -52,7 +59,7 @@ const allSection = document.querySelectorAll('.section');
 const revSection = function(entries, observer) {
 
   const [entry] = entries;
-  console.log(entry)
+  // console.log(entry)
 
   if(entry.isIntersecting) {
     entry.target.classList.remove('section-hidden');
@@ -67,4 +74,4 @@ const intSection = new IntersectionObserver(revSection, {
 allSection.forEach(section => {
   intSection.observe(section);
   section.classList.add('section-hidden')
-})
+});
