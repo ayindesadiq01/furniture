@@ -248,7 +248,7 @@ ul li {
   background-color: #ff530e;
   padding: .3em;
   border-radius: 40%;
-  width: 3 0px;
+  width: 30px;
 }
 
 .mission h1 {
@@ -297,12 +297,13 @@ ul li {
   object-position: center;
 }
 
-.product-type, .price {
-  font-weight: bold;
+.product-type {
+  font-weight: 400;
 }
 
 .price {
   font-size: 1rem;
+  font-weight: bold;
 }
 
 .pair {
@@ -542,6 +543,7 @@ ul li {
 .footer-home p img {
   margin-right: .5em;
 }
+
 .footer-home span{
   font-size: .9rem;
 }
@@ -731,10 +733,6 @@ ul li {
     line-height: 1.7em;
   }
 
-  .product-list img {
-    height: 350px;
-  }
-
   .recom-list {
     width: 100%;
   }
@@ -840,4 +838,147 @@ ul li {
   }
 
 
+  .mission {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .mission-lists {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .mission-list {
+    text-align: left;
+    width: 33%;
+    margin-bottom: 1em;
+  }
+
+  .mission-list h4 {
+    font-size: 1rem;
+  }
+
+  .mission-list p {
+    font-size: .8rem;
+  }
+
+  .mission-icon {
+    width: 25px;
+  }
+
+  .products {
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom: 1.5em;
+  }
+
+  .product-list img {
+    height: 380px;
+  }
+
+  .signup-text, .artistry-box {
+    width: 90%;
+    /* padding: ; */
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .signup-text h1{
+    font-size: 1.1rem;
+  }
+
+  .signup-text p {
+    font-size: .8rem;
+    padding: 1em 6em;
+  }
+
+  .mail {
+    display: flex;
+    flex-direction: row;
+    display: flex;
+    justify-content: center;
+  }
+
+  #mail {
+    margin: 0;
+    
+    /* align-items: center; */
+  }
+
+  .submit-btn {
+    margin-bottom: 0;
+  }
+
+  .recom-lists {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .footer-info {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .footer-home {
+    order: -1;
+    border: none;
+  }
+
+  .join-us {
+    order: 0;
+  }
+
+  .categories {
+    order: 2;
+  }
+
+  .footer-services {
+    grid-template-columns: repeat(3, 1fr);
+    grid-column: 1/3;
+  }
+
+  .categories {
+    margin-right: 2em;
+  }
+
+  .loc-info {
+    flex-direction: row;
+  }
+
+  .cation-info .lo-address{
+    margin-top: 1em;
+  }
+}
+
+@media (min-width: 1024px) {
+  .home {
+    padding: .5em 3em;
+    min-height: 100vh;;
+  }
+  .home-page {
+    width: 75%;
+  }
+
+
+  .page-text {
+    font-size: 3.2rem;
+    /* padding: 0 .5em; */
+  }
+
+  .page-wording {
+    font-size: 1.2rem;
+  }
+
+  .mission, .products {
+    width: 80%;
+  }
+
+  .second-lists {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .second-lists .product-list {
+    width: 95%;
+  }
 }
