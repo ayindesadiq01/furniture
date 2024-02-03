@@ -42,17 +42,21 @@ const menuBar = document.querySelector('.menu-bar');
 const menuIcon = document.querySelector('.menu-icon');
 const closeIcon = document.querySelector('.close-icon');
 const blurr = document.querySelector('.blurry');
+const menuu = document.querySelector('.menuu')
 
 
-menuIcon.addEventListener('click', () => {
-  menuBar.classList.remove('hidden');
-  blurr.classList.remove('hidden');
+menuu.addEventListener('click', () => {
+  menuu.classList.toggle('openmenu');
+  blurr.classList.toggle('hidden')
+
+  if(menuu.classList.contains('openmenu')) {
+    menuBar.style.right = '0'
+    console.log('yoo')
+  } else {
+    menuBar.style.right = '-200px'
+  }
 })
 
-closeIcon.addEventListener('click', () => {
-  menuBar.classList.add('hidden');
-  blurr.classList.add('hidden');
-})
 
 // REVEALING ON SCROLL
 const allSection = document.querySelectorAll('.section');
@@ -112,8 +116,8 @@ homeSection.observe(homee)
 
 // Working with search Box
 
-const searchIcon = document.querySelector('.search-icon');
-const searchBox = document.querySelector('.search-box');
+const searchIcon = document.querySelectorAll('.search-icon');
+const searchBox = document.querySelectorAll('.search-box');
 
 
 const sIcon = function() {
@@ -121,9 +125,15 @@ const sIcon = function() {
   searchBox.classList.remove('hidden')
 }
 
-searchIcon.addEventListener('click', sIcon)
+// searchIcon.addEventListener('click', sIcon)
 
-// window.addEventListener('click', function(){
-//   searchIcon.classList.remove('hidden');
-//   searchBox.classList.add('hidden')
-// })
+searchIcon.forEach(searchI => {
+  searchI.addEventListener('click', () => {
+    searchI.classList.add('hidden');
+
+    searchBox.forEach(searchB => {
+      searchB.classList.remove('hidden')
+    })
+  })
+})
+
