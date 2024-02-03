@@ -98,11 +98,17 @@ ul li {
 
 .menu-bar {
   position: absolute;
-  top: 72px;
+  top: 80px;
   right: -200px;
-  background-color: grey;
+  background-color: rgb(254, 41, 41);
   width: 50%;
+  height: 400px;
   transition: 1s;
+  color: white;
+}
+
+.bottom-close {
+  opacity: 0;
 }
 
 .search-icon {
@@ -663,6 +669,10 @@ ul li {
 
 /* MEDIA QUERIES */
 @media (min-width: 481px) {
+  .menu-bar {
+    height: 100%;
+  }
+
   .top-bar{
     padding: 1em 2em;
   }
@@ -670,6 +680,7 @@ ul li {
   .home {
     padding: 3em 2em;
   }
+
 
   .mission {
     padding: 1em 2em;

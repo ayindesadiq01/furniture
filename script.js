@@ -51,12 +51,21 @@ menuu.addEventListener('click', () => {
 
   if(menuu.classList.contains('openmenu')) {
     menuBar.style.right = '0'
-    console.log('yoo')
   } else {
     menuBar.style.right = '-200px'
   }
 })
 
+blurr.addEventListener('click', () => {
+  menuu.classList.toggle('openmenu');
+  blurr.classList.toggle('hidden')
+
+  if(menuu.classList.contains('openmenu')) {
+    menuBar.style.right = '0'
+  } else {
+    menuBar.style.right = '-200px'
+  }
+})
 
 // REVEALING ON SCROLL
 const allSection = document.querySelectorAll('.section');
