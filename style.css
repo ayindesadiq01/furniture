@@ -84,6 +84,7 @@ ul li {
 
 .search-box {
   width: 100%;
+  transition: 1s;
 }
 
 .location-info {
@@ -1175,5 +1176,91 @@ ul li {
 
   .join-us {
     width: 20%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .home-page {
+    width: 60%;
+  }
+  .page-text {
+    font-size: 3.5rem;
+  }
+
+  .mission {
+    width: 80%;
+  }
+
+  .mission-heading {
+    font-size: 3rem;
+  }
+
+  .mission-lists {
+    margin-top: 3.5em;
+  }
+
+  .mission-list {
+    width: 32%;
+  }
+
+  .mission-list h4 {
+    font-size: 1.2rem;
+  }
+
+  .mission-list p {
+    font-size: 1rem;
+  }
+
+  .signup-text {
+    padding: 5em 6em;
+  }
+
+  .signup-text h1 {
+    font-size: 1.3rem;
+  }
+
+  .signup-text p {
+    font-size: 1rem;
+  }
+
+  .left-box h2 {
+    font-size: 1.3rem;
+    line-height: 1em;
+  }
+
+  .left-box p {
+    font-size: 1rem;
+    margin: 1em 0 6em 0;
+  }
+
+  .left-box, .right-box {
+    height: 450px;
+  }
+
+  .recom-image {
+    height: 400px;
+  }
+
+  .product-type {
+    font-size: 1.3rem;
+    margin: .4em 0;
+  }
+
+  .price {
+    font-size: 1.1rem;
+  }
+}
+
+@media (min-width: 1440px) {
+  .mission, .products, .sign-up {
+    width: 70%;
+    margin: 0 auto;
+  }
+  .signup-text h1 {
+    font-size: 1.2rem;
+  }
+
+  .signup-text p {
+    font-size: 1rem;
   }
 }

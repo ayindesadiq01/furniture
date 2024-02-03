@@ -109,3 +109,21 @@ const homeSection = new IntersectionObserver(homSection, {
 });
 
 homeSection.observe(homee)
+
+// Working with search Box
+
+const searchIcon = document.querySelector('.search-icon');
+const searchBox = document.querySelector('.search-box');
+
+
+const sIcon = function() {
+  searchIcon.classList.add('hidden');
+  searchBox.classList.remove('hidden')
+}
+
+searchIcon.addEventListener('click', sIcon)
+
+// window.addEventListener('click', function(){
+//   searchIcon.classList.remove('hidden');
+//   searchBox.classList.add('hidden')
+// })
