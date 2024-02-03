@@ -52,7 +52,7 @@ menuu.addEventListener('click', () => {
   if(menuu.classList.contains('openmenu')) {
     menuBar.style.right = '0'
   } else {
-    menuBar.style.right = '-200px'
+    menuBar.style.right = '-400px'
   }
 })
 
@@ -63,7 +63,7 @@ blurr.addEventListener('click', () => {
   if(menuu.classList.contains('openmenu')) {
     menuBar.style.right = '0'
   } else {
-    menuBar.style.right = '-200px'
+    menuBar.style.right = '-400px'
   }
 })
 

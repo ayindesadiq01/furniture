@@ -99,7 +99,7 @@ ul li {
 .menu-bar {
   position: absolute;
   top: 80px;
-  right: -200px;
+  right: -400px;
   background-color: rgb(254, 41, 41);
   width: 50%;
   height: 400px;
