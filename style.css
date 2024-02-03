@@ -429,6 +429,7 @@ ul li {
   padding: .7em 1em;
   border: none;
   margin: .5em 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .call {
@@ -752,10 +753,12 @@ ul li {
     align-items: center;
     padding-bottom: .5em;
   }
+
   .home-page {
-    width: 80%;
+    width: 100%;
     margin: 0 auto;
   }
+
   .page-wording {
     font-size: 1rem;
   }
@@ -791,15 +794,25 @@ ul li {
   }
 
   .menu {
-    width: 100%;
+    width: 90%;
   }
 
   .men {
-    width: 20%;
+    width: 5%;
   }
 
   .bottom-close {
-    width: 15%;
+    width: 20%;
+    display: flex;
+  }
+
+  .menu-lists {
+    margin-left: 2.5em;
+    width: 70%;
+  }
+
+  .search-box {
+    margin-right: .5em;
   }
 
   .bottom-close img {
@@ -876,11 +889,16 @@ ul li {
     height: 380px;
   }
 
-  .signup-text, .artistry-box {
+  .sign-up {
+    padding-left: 1em;
+    padding-right: 1em;
+  }
+
+  .signup-text {
     width: 90%;
-    /* padding: ; */
     margin: 0 auto;
     text-align: center;
+    padding: 2em 4em;
   }
 
   .signup-text h1{
@@ -901,17 +919,84 @@ ul li {
 
   #mail {
     margin: 0;
-    
-    /* align-items: center; */
+    width: 50%;
+    padding: .5em .5em;
   }
 
   .submit-btn {
     margin-bottom: 0;
+    padding: .7em .9em;
+    font-size: .9rem;
+  }
+
+  #mail:placeholder-shown {
+    font-size: .7rem;
+    letter-spacing: 1px;
   }
 
   .recom-lists {
     width: 90%;
     margin: 0 auto;
+  }
+
+  .artistry {
+    padding: 2em 1em 4em 1em;
+  }
+
+  .artistry-box {
+    width: 90%;
+    margin: 0 auto;
+    flex-direction: row;
+  }
+
+  .left-box {
+    width: 50%;
+    height: 400px;
+  }
+
+  .left-box h2 {
+    font-size: 1.1rem;
+  }
+
+  .left-box p {
+    margin: 1em 0 7em 0;
+    font-size: .8rem;
+    line-height: 1.5em;
+  }
+  
+  .right-box {
+    width: 50%;
+    height: 400px;
+  }
+
+  .view {
+    font-size: .9rem;
+    font-weight: 500;
+  }
+
+  /* REcommendation */
+  .recommendation {
+    position: relative;
+    padding: 0;
+  }
+
+  .recom-heading {
+    margin: 3em 0 3em 0;
+  }
+
+  .recom-lists {
+    position: relative;
+    top: -80px;
+    background-color: transparent;
+  }
+
+  .recom-box {
+    width: 100%;
+    padding: 0;
+  }
+  .footer {
+    width: 100%;
+    padding: 1em 2em;
   }
 
   .footer-info {
@@ -942,7 +1027,15 @@ ul li {
   }
 
   .loc-info {
+    display: flex;
+    justify-content: center;
     flex-direction: row;
+    margin: .8em 0;
+  }
+
+  .loc-info p {
+    padding: 0;
+    font-size: .8rem;
   }
 
   .cation-info .lo-address{
@@ -952,16 +1045,32 @@ ul li {
 
 @media (min-width: 1024px) {
   .home {
-    padding: .5em 3em;
+    padding: 1.5em 3em;
     min-height: 100vh;;
   }
+
   .home-page {
-    width: 75%;
+    width: 65%;
+  }
+
+  .menu {
+    width: 90%;
+  }
+
+  .men {
+    width: 20%;
+  }
+  .menu-lists {
+    width: 60%;
+  }
+
+  .bottom-close {
+    width: 25%;
   }
 
 
   .page-text {
-    font-size: 3.2rem;
+    font-size: 2.8rem;
     /* padding: 0 .5em; */
   }
 
@@ -980,5 +1089,91 @@ ul li {
 
   .second-lists .product-list {
     width: 95%;
+  }
+
+  .signup-text, .artistry-box {
+    width: 70%;
+  }
+
+  .recom-lists {
+    width: 70%;
+  }
+
+  .recom-list {
+    width: 100%;
+  }
+
+  .recom-list img {
+    object-fit: cover;
+    object-position: center;
+  }
+
+  .recom-image {
+    width: 100%;
+    height: 370px;
+    object-fit:cover;
+    object-position:center
+  }
+
+  .footer-info {
+    width: 90%;
+    display: flex;
+    margin: 0 auto;
+  }
+
+  .join-us {
+    order: 3;
+    width: 15%;
+  }
+
+  .footer-home {
+    order: 1;
+    width: 30%;
+  }
+
+  .footer-services {
+    order: 2;
+    width: 50%;
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+
+  .categories {
+    margin-right: 0;
+  }
+
+  .footer-link {
+    border-top: 1px solid rgb(194, 194, 194);
+    padding-top: 1.5em;
+  }
+
+  .footer-signup {
+    display: grid;
+  }
+}
+
+@media (min-width: 1200px) {
+  .home-page {
+    width: 80%;
+  }
+  .men {
+    width: 20%;
+  }
+
+  .bottom-close {
+    /* display: flex; */
+    width: 30%;
+  }
+  .footer-home {
+    width: 30%;
+  }
+
+  .footer-services {
+    width: 50%;
+  }
+
+  .join-us {
+    width: 20%;
   }
 }

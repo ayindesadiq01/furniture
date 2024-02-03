@@ -31,7 +31,7 @@ const conObFtn = function(entries) {
 
 const contOb = new IntersectionObserver(conObFtn, {
   root: null,
-  threshold: 0.6
+  threshold: 0.5
 })
 
 contOb.observe(home);
