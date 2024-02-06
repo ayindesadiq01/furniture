@@ -102,7 +102,7 @@ ul li {
   right: -400px;
   background-color: rgb(254, 41, 41);
   width: 50%;
-  height: 400px;
+  height: 900px;
   transition: 1s;
   color: white;
 }
@@ -120,11 +120,16 @@ ul li {
 }
 
 .menu-lists {
-  padding: 1em;
+  /* padding: 1em; */
 }
 
 .list-item {
-  margin: .5em 0;
+  padding: .5em .1em;
+}
+
+.list-item:hover {
+  background-color: white;
+  color: red;
 }
 
 
@@ -291,7 +296,7 @@ ul li {
   position: absolute;
   top: 0;
   width: 100%;
-  min-height: 600px;
+  min-height: 900px;
   background-color: rgba(223, 223, 223, .7);
   /* transform: translateY(-500px); */
   transition: 1s;
