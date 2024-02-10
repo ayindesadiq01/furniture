@@ -868,7 +868,7 @@ ul li {
     width: 100%;
     background-color: transparent;
     align-items: center;
-    left: 8%;
+    left: 0%;
   }
 
   .mob {
@@ -878,7 +878,7 @@ ul li {
   .menu-lists {
     padding: 0;
     display: flex;
-    width: 90%;
+    width: 65%;
     padding: .5em 0;
   }
 
@@ -887,7 +887,7 @@ ul li {
   }
 
   .men {
-    width: 1%;
+    width: 20%;
   }
 
   .bottom-close {
@@ -895,13 +895,9 @@ ul li {
     display: flex;
   }
 
-  .menu-lists {
-    /* margin-left: 2.5em; */
-    width: 70%;
-  }
-
   .search-box {
     margin-right: .5em;
+    width: 40%;
   }
 
   .bottom-close {
@@ -915,7 +911,7 @@ ul li {
   .list-item {
     margin-right: .8em;
     color: #726E8D;
-    font-size: .9rem;
+    font-size: .8rem;
   }
 
   .lo-address {
@@ -1144,7 +1140,7 @@ ul li {
 
 @media (min-width: 1024px) {
   .home {
-    padding: 1.5em 3em;
+    padding: 1em 3em;
     min-height: 100vh;;
   }
 
@@ -1262,7 +1258,7 @@ ul li {
   }
 
   .page-text {
-    font-size: 3.5rem;
+    font-size: 3rem;
   }
 
   .mission {
@@ -1334,11 +1330,35 @@ ul li {
 }
 
 @media (min-width: 1400px) {
+  .logo-text {
+    font-size: 1.5rem;
+  }
+
+  .lo-address {
+    font-size: 1.1rem;
+  }
+
+  .list-item {
+    font-size: 1.1rem;
+  }
+
+  .bottom-close img {
+    width: 20px;
+  }
   .home {
     height: 60%;
   }
+
   .home-page {
     padding-top: 3em;
+  }
+
+  .menu-lists {
+    width: 75%;
+  }
+
+  .bottom-close {
+    width: 15%;
   }
   .products, .mission {
     width: 70%;
@@ -1348,6 +1368,11 @@ ul li {
 
   .mission-lists {
     padding: 1em 2em;
+  }
+
+  .mission-list p {
+    font-size: .9rem;
+    line-height: 1.6em;
   }
 
   .signup-text, .artistry-box {
@@ -1368,6 +1393,26 @@ ul li {
 
   .footer {
     padding: 4em 3em;
+  }
+
+  .categories h4 {
+    font-size: 1.3rem;
+  }
+
+  .categories p {
+    font-size: 1.1rem;
+  }
+
+  .join-us p {
+    font-size: 1.1rem;
+  }
+
+  .footer-home p {
+    font-size: 1.2rem;
+  }
+
+  .footer-home span {
+    font-size: 1.1rem;
   }
 }
 
