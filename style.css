@@ -893,6 +893,7 @@ ul li {
   .bottom-close {
     width: 20%;
     display: flex;
+    justify-content: center;
   }
 
   .search-box {
@@ -912,6 +913,22 @@ ul li {
     margin-right: .8em;
     color: #726E8D;
     font-size: .8rem;
+    position: relative;
+    cursor: pointer;
+  }
+
+  .list-item::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    background-color: red;
+    width: 2%;
+    height: 1.5px;
+    transition: width 1s;
+  }
+
+  .list-item:hover::after {
+    width: 50%;
   }
 
   .lo-address {
@@ -1149,7 +1166,7 @@ ul li {
   }
 
   .menu {
-    width: 90%;
+    width: 100%;
   }
 
   .men {
@@ -1157,10 +1174,13 @@ ul li {
   }
   .menu-lists {
     width: 60%;
+    justify-content: space-between;
   }
 
   .bottom-close {
     width: 25%;
+    display: flex;
+    justify-content: center;
   }
 
 
