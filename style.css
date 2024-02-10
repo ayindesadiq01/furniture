@@ -100,7 +100,8 @@ ul li {
   position: absolute;
   top: 80px;
   right: -400px;
-  background-color: rgb(254, 41, 41);
+  /* background-color: rgb(254, 41, 41); */
+  background-color: transparent;
   width: 50%;
   height: 900px;
   transition: 1s;
@@ -207,14 +208,14 @@ ul li {
   background-repeat: none;
   background-size: cover;
   width: 100%;
-  padding: 3em 1em;
+  padding: 3em .5em;
   color: white;
   overflow-x: auto;
 }
 
 .home-page {
   width: 100%;
-  overflow-x: hidden;
+  /* overflow-x: hidden; */
 }
 
 .top {
@@ -867,6 +868,7 @@ ul li {
     width: 100%;
     background-color: transparent;
     align-items: center;
+    left: 8%;
   }
 
   .mob {
@@ -881,11 +883,11 @@ ul li {
   }
 
   .menu {
-    width: 90%;
+    width: 95%;
   }
 
   .men {
-    width: 5%;
+    width: 1%;
   }
 
   .bottom-close {
@@ -894,12 +896,16 @@ ul li {
   }
 
   .menu-lists {
-    margin-left: 2.5em;
+    /* margin-left: 2.5em; */
     width: 70%;
   }
 
   .search-box {
     margin-right: .5em;
+  }
+
+  .bottom-close {
+    opacity: 1;
   }
 
   .bottom-close img {
