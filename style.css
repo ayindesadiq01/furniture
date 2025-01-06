@@ -249,7 +249,7 @@ ul li {
 .collection-link::before {
   content: '';
   position: absolute;
-  top: -2px;
+  top: -5px;
   left: -2px;
   width: 10%;
   height: 15px;
